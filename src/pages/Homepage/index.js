@@ -30,6 +30,9 @@ const HomepagePage = () => {
   function handleNavigate7() {
     navigate("/hotelspage");
   }
+  function handleBackNavigation() {
+    navigate(-1);
+  }
 
   return (
     <>
@@ -300,9 +303,10 @@ const HomepagePage = () => {
                     </Row>
                   </Column>
                   <Button
-                    className="font-medium 2xl:ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] lg:text-[11px] xl:text-[13px] 2xl:text-[15px] 3xl:text-[18px] text-center tracking-ls1 uppercase w-[15%]"
+                    className="common-pointer font-medium 2xl:ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] lg:text-[11px] xl:text-[13px] 2xl:text-[15px] 3xl:text-[18px] text-center tracking-ls1 uppercase w-[15%]"
                     compid="1323:1383"
                     comptype="Button"
+                    onClick={handleBackNavigation}
                     size="lg"
                   >
                     Search flights
