@@ -203,9 +203,9 @@ const HotelsPagePage = () => {
             >
               <Img
                 src="images/img_resultsimage.png"
-                className="ResultsImage"
+                className="lg:h-[172px] xl:h-[196px] 2xl:h-[221px] 3xl:h-[265px] rounded-radius50 w-[46%]"
                 compid="1003:25176"
-                comptype="Image"
+                comptype="CircleImage"
                 alt="ResultsImage"
               />
               <Column
@@ -315,9 +315,9 @@ const HotelsPagePage = () => {
             >
               <Img
                 src="images/img_resultsimage_220X260.png"
-                className="ResultsImage"
+                className="lg:h-[172px] xl:h-[196px] 2xl:h-[221px] 3xl:h-[265px] rounded-radius50 w-[46%]"
                 compid="1003:25194"
-                comptype="Image"
+                comptype="CircleImage"
                 alt="ResultsImage One"
               />
               <Column
@@ -408,9 +408,9 @@ const HotelsPagePage = () => {
             >
               <Img
                 src="images/img_resultsimage_1.png"
-                className="ResultsImage"
+                className="lg:h-[172px] xl:h-[196px] 2xl:h-[221px] 3xl:h-[265px] rounded-radius50 w-[46%]"
                 compid="1003:25211"
-                comptype="Image"
+                comptype="CircleImage"
                 alt="ResultsImage Two"
               />
               <Column
@@ -501,9 +501,9 @@ const HotelsPagePage = () => {
             >
               <Img
                 src="images/img_resultsimage_2.png"
-                className="ResultsImage"
+                className="lg:h-[172px] xl:h-[196px] 2xl:h-[221px] 3xl:h-[265px] rounded-radius50 w-[46%]"
                 compid="1003:25228"
-                comptype="Image"
+                comptype="CircleImage"
                 alt="ResultsImage Three"
               />
               <Column
