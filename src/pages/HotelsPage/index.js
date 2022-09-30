@@ -16,12 +16,15 @@ import { useNavigate } from "react-router-dom";
 const HotelsPagePage = () => {
   const navigate = useNavigate();
 
-  function handleNavigate3() {
+  function handleNavigate() {
+    navigate("/homepage");
+  }
+  function handleNavigate4() {
     //TODO: You had integrated navigation action, since you've not selected the target page,
     // you will have to update navigation code manually.
     navigate("");
   }
-  function handleNavigate4() {
+  function handleNavigate5() {
     navigate("/homepage");
   }
 
@@ -50,7 +53,7 @@ const HotelsPagePage = () => {
               compid="1016:12065"
               variant="body6"
               comptype="Text"
-              onClick={handleNavigate4}
+              onClick={handleNavigate5}
             >
               Explore
             </Text>
@@ -59,7 +62,7 @@ const HotelsPagePage = () => {
               compid="1016:12066"
               variant="body6"
               comptype="Text"
-              onClick={handleNavigate3}
+              onClick={handleNavigate4}
             >
               Search
             </Text>
@@ -260,10 +263,11 @@ const HotelsPagePage = () => {
                         4.7
                       </Text>
                       <Text
-                        className="test_60reviews"
+                        className="common-pointer test_60reviews"
                         compid="1003:25183"
                         variant="body4"
                         comptype="Text"
+                        onClick={handleNavigate}
                       >
                         (1,136 reviews)
                       </Text>
