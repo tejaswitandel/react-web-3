@@ -336,6 +336,7 @@ const HomepagePage = () => {
                     onClick={() => {
                       form.handleSubmit(callApi1);
                     }}
+                    shape="RoundedBorder4"
                     size="md"
                     variant="FillOrange500"
                   >
@@ -1252,6 +1253,8 @@ const HomepagePage = () => {
               className="font-medium mb-[2px] lg:mt-[17px] xl:mt-[20px] 2xl:mt-[23px] 3xl:mt-[27px] lg:text-[11px] xl:text-[13px] 2xl:text-[15px] 3xl:text-[18px] text-center tracking-ls1 uppercase w-[100%]"
               compid="1003:4089"
               comptype="Button"
+              shape="RoundedBorder4"
+              size="sm"
               variant="OutlineBluegray102"
             >
               More details
@@ -1350,6 +1353,8 @@ const HomepagePage = () => {
                 className="font-medium mb-[2px] lg:mt-[17px] xl:mt-[20px] 2xl:mt-[23px] 3xl:mt-[27px] lg:text-[11px] xl:text-[13px] 2xl:text-[15px] 3xl:text-[18px] text-center tracking-ls1 uppercase w-[100%]"
                 compid="1003:4104"
                 comptype="Button"
+                shape="RoundedBorder4"
+                size="sm"
                 variant="OutlineBluegray102"
               >
                 More details
@@ -1440,6 +1445,8 @@ const HomepagePage = () => {
               className="font-medium mb-[2px] lg:mt-[17px] xl:mt-[20px] 2xl:mt-[23px] 3xl:mt-[27px] lg:text-[11px] xl:text-[13px] 2xl:text-[15px] 3xl:text-[18px] text-center tracking-ls1 uppercase w-[100%]"
               compid="1003:4119"
               comptype="Button"
+              shape="RoundedBorder4"
+              size="sm"
               variant="OutlineBluegray102"
             >
               More details
@@ -1529,6 +1536,8 @@ const HomepagePage = () => {
               className="font-medium mb-[2px] lg:mt-[17px] xl:mt-[20px] 2xl:mt-[23px] 3xl:mt-[27px] lg:text-[11px] xl:text-[13px] 2xl:text-[15px] 3xl:text-[18px] text-center tracking-ls1 uppercase w-[100%]"
               compid="1003:4135"
               comptype="Button"
+              shape="RoundedBorder4"
+              size="sm"
               variant="OutlineBluegray103"
             >
               More details
@@ -1605,6 +1614,7 @@ const HomepagePage = () => {
                   className="font-medium ml-[2px] lg:mt-[13px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] lg:text-[11px] xl:text-[13px] 2xl:text-[15px] 3xl:text-[18px] text-center tracking-ls1 uppercase w-[36%]"
                   compid="1003:4170"
                   comptype="Button"
+                  shape="RoundedBorder4"
                   size="md"
                   variant="FillOrange500"
                 >
@@ -1639,13 +1649,11 @@ const HomepagePage = () => {
                   free flight and hotel bookings. We also have all your flight
                   needs in you online shop.
                 </Text>
-                <Img
-                  src="images/img_socialicons.svg"
-                  className="lg:h-[22px] xl:h-[25px] 2xl:h-[29px] 3xl:h-[34px] ml-[1px] lg:mt-[13px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] w-[20%]"
+                <Button
+                  className="ml-[1px] lg:mt-[13px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] text-center w-[20%]"
                   compid="1003:4180"
-                  comptype="Image"
-                  alt="SocialIcons"
-                />
+                  comptype="Button"
+                ></Button>
               </Column>
               <Line
                 className="bg-white_A700_33 lg:h-[122px] xl:h-[139px] 2xl:h-[157px] 3xl:h-[188px] mb-[2px] w-[1px]"

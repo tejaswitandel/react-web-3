@@ -74,11 +74,6 @@ Button.propTypes = {
   ]),
   size: PropTypes.oneOf(["sm", "md", "smIcn", "mdIcn"]),
 };
-Button.defaultProps = {
-  className: "",
-  shape: "RoundedBorder4",
-  variant: "FillBlue800",
-  size: "sm",
-};
+Button.defaultProps = { className: "", shape: "", variant: "", size: "" };
 
 export { Button };

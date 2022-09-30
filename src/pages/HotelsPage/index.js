@@ -168,6 +168,7 @@ const HotelsPagePage = () => {
                 compid="1003:25164"
                 comptype="Button"
                 shape="RoundedBorder20"
+                size="sm"
                 variant="OutlineWhiteA700"
               >
                 Recommended
@@ -177,6 +178,7 @@ const HotelsPagePage = () => {
                 compid="1003:25165"
                 comptype="Button"
                 shape="RoundedBorder20"
+                size="sm"
                 variant="OutlineWhiteA7001_2"
               >
                 Price
@@ -186,6 +188,7 @@ const HotelsPagePage = () => {
                 compid="1003:25166"
                 comptype="Button"
                 shape="RoundedBorder20"
+                size="sm"
                 variant="OutlineWhiteA7001_2"
               >
                 Rating
@@ -342,6 +345,9 @@ const HotelsPagePage = () => {
                   className="font-medium ml-[1px] 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[8px] xl:mt-[9px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-center tracking-ls1 w-[60%]"
                   compid="1003:25192"
                   comptype="Button"
+                  shape="RoundedBorder4"
+                  size="sm"
+                  variant="FillBlue800"
                 >
                   View Details
                 </Button>
@@ -436,6 +442,9 @@ const HotelsPagePage = () => {
                   className="font-medium ml-[1px] 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[8px] xl:mt-[9px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-center tracking-ls1 w-[60%]"
                   compid="1003:25209"
                   comptype="Button"
+                  shape="RoundedBorder4"
+                  size="sm"
+                  variant="FillBlue800"
                 >
                   View Details
                 </Button>
@@ -530,6 +539,9 @@ const HotelsPagePage = () => {
                   className="font-medium ml-[1px] 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[8px] xl:mt-[9px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-center tracking-ls1 w-[61%]"
                   compid="1003:25226"
                   comptype="Button"
+                  shape="RoundedBorder4"
+                  size="sm"
+                  variant="FillBlue800"
                 >
                   View Details
                 </Button>
@@ -642,6 +654,9 @@ const HotelsPagePage = () => {
                   className="font-medium ml-[1px] 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[8px] xl:mt-[9px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-center tracking-ls1 w-[60%]"
                   compid="1003:25244"
                   comptype="Button"
+                  shape="RoundedBorder4"
+                  size="sm"
+                  variant="FillBlue800"
                 >
                   View Details
                 </Button>
@@ -748,6 +763,7 @@ const HotelsPagePage = () => {
                   onClick={() => {
                     form.handleSubmit(callApi);
                   }}
+                  shape="RoundedBorder4"
                   size="md"
                   variant="FillOrange500"
                 >
@@ -782,13 +798,11 @@ const HotelsPagePage = () => {
                   free flight and hotel bookings. We also have all your flight
                   needs in you online shop.
                 </Text>
-                <Img
-                  src="images/img_socialicons.svg"
-                  className="lg:h-[22px] xl:h-[25px] 2xl:h-[29px] 3xl:h-[34px] ml-[1px] lg:mt-[13px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] w-[20%]"
+                <Button
+                  className="ml-[1px] lg:mt-[13px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] text-center w-[20%]"
                   compid="1003:25306"
-                  comptype="Image"
-                  alt="SocialIcons"
-                />
+                  comptype="Button"
+                ></Button>
               </Column>
               <Line
                 className="bg-white_A700_33 lg:h-[122px] xl:h-[139px] 2xl:h-[157px] 3xl:h-[188px] mb-[2px] w-[1px]"
