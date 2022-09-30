@@ -17,9 +17,6 @@ const Home = () => {
         <li>
           <Link to="/hotelspage">HotelsPage</Link>
         </li>
-        <li>
-          <Link to="/resultspage">ResultsPage</Link>
-        </li>
       </ul>
     </div>
   );

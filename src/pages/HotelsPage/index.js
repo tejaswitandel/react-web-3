@@ -16,10 +16,12 @@ import { useNavigate } from "react-router-dom";
 const HotelsPagePage = () => {
   const navigate = useNavigate();
 
-  function handleNavigate4() {
-    navigate("/resultspage");
+  function handleNavigate3() {
+    //TODO: You had integrated navigation action, since you've not selected the target page,
+    // you will have to update navigation code manually.
+    navigate("");
   }
-  function handleNavigate5() {
+  function handleNavigate4() {
     navigate("/homepage");
   }
 
@@ -38,33 +40,33 @@ const HotelsPagePage = () => {
           >
             <Img
               src="images/img_combinedshape.png"
-              className="CombinedShape"
+              className="lg:h-[25px] xl:h-[29px] 2xl:h-[33px] 3xl:h-[39px] lg:ml-[45px] xl:ml-[52px] 2xl:ml-[59px] 3xl:ml-[70px] w-[12%]"
               compid="1016:12062"
               comptype="Image"
               alt="CombinedShape"
             />
             <Text
-              className="common-pointer hover:font-normal lg:ml-[574px] xl:ml-[656px] 2xl:ml-[738px] 3xl:ml-[886px] hover:text-blue_800 text-gray_800 TopContainer"
+              className="common-pointer cursor-pointer hover:font-normal font-normal lg:ml-[574px] xl:ml-[656px] 2xl:ml-[738px] 3xl:ml-[886px] not-italic hover:text-blue_800 text-gray_800 w-[auto]"
               compid="1016:12065"
-              variant="body7"
+              variant="body6"
               comptype="Text"
-              onClick={handleNavigate5}
+              onClick={handleNavigate4}
             >
               Explore
             </Text>
             <Text
               className="common-pointer hover:font-normal hover:text-blue_800 Search"
               compid="1016:12066"
-              variant="body7"
+              variant="body6"
               comptype="Text"
-              onClick={handleNavigate4}
+              onClick={handleNavigate3}
             >
               Search
             </Text>
             <Text
-              className="hover:font-normal lg:ml-[23px] xl:ml-[26px] 2xl:ml-[30px] 3xl:ml-[36px] text-blue_800 TopContainer"
+              className="cursor-pointer hover:font-normal font-normal lg:ml-[23px] xl:ml-[26px] 2xl:ml-[30px] 3xl:ml-[36px] not-italic text-blue_800 w-[auto]"
               compid="1016:12067"
-              variant="body7"
+              variant="body6"
               comptype="Text"
             >
               Hotels
@@ -72,14 +74,14 @@ const HotelsPagePage = () => {
             <Text
               className="hover:font-normal hover:text-blue_800 Search"
               compid="1016:12068"
-              variant="body7"
+              variant="body6"
               comptype="Text"
             >
               Offers
             </Text>
             <Img
               src="images/img_notification.svg"
-              className="notification"
+              className="lg:h-[17px] xl:h-[19px] 2xl:h-[22px] 3xl:h-[26px] lg:ml-[29px] xl:ml-[33px] 2xl:ml-[38px] 3xl:ml-[45px] w-[1%]"
               compid="1016:12074"
               comptype="Image"
               alt="notification"
@@ -129,7 +131,6 @@ const HotelsPagePage = () => {
                 compid="1003:25164"
                 comptype="Button"
                 shape="RoundedBorder20"
-                size="sm"
                 variant="OutlineWhiteA700"
               >
                 Recommended
@@ -139,7 +140,6 @@ const HotelsPagePage = () => {
                 compid="1003:25165"
                 comptype="Button"
                 shape="RoundedBorder20"
-                size="sm"
                 variant="OutlineWhiteA7001_2"
               >
                 Price
@@ -149,7 +149,6 @@ const HotelsPagePage = () => {
                 compid="1003:25166"
                 comptype="Button"
                 shape="RoundedBorder20"
-                size="sm"
                 variant="OutlineWhiteA7001_2"
               >
                 Rating
@@ -165,7 +164,7 @@ const HotelsPagePage = () => {
           <Text
             className="font-medium mb-[2px] text-bluegray_900 tracking-ls1 uppercase w-[auto]"
             compid="1003:25169"
-            variant="body4"
+            variant="body3"
             comptype="Text"
           >
             200+ results
@@ -173,7 +172,7 @@ const HotelsPagePage = () => {
           <Text
             className="font-normal 2xl:ml-[1068px] 3xl:ml-[1282px] lg:ml-[830px] xl:ml-[950px] mt-[1px] not-italic text-bluegray_900 tracking-ls1 w-[auto]"
             compid="1003:25172"
-            variant="body5"
+            variant="body4"
             comptype="Text"
           >
             Filters
@@ -227,7 +226,7 @@ const HotelsPagePage = () => {
                     <Text
                       className="DepartureDetai"
                       compid="1003:25180"
-                      variant="body5"
+                      variant="body4"
                       comptype="Text"
                     >
                       1 king bed standard
@@ -255,7 +254,7 @@ const HotelsPagePage = () => {
                       <Text
                         className="font-medium lg:ml-[4px] xl:ml-[5px] 2xl:ml-[6px] 3xl:ml-[7px] mt-[1px] text-bluegray_900 tracking-ls1 w-[auto]"
                         compid="1003:25185"
-                        variant="body5"
+                        variant="body4"
                         comptype="Text"
                       >
                         4.7
@@ -263,7 +262,7 @@ const HotelsPagePage = () => {
                       <Text
                         className="test_60reviews"
                         compid="1003:25183"
-                        variant="body5"
+                        variant="body4"
                         comptype="Text"
                       >
                         (1,136 reviews)
@@ -294,7 +293,7 @@ const HotelsPagePage = () => {
                   <Text
                     className="night"
                     compid="1003:25191"
-                    variant="body7"
+                    variant="body6"
                     comptype="Text"
                   >
                     /night
@@ -304,7 +303,6 @@ const HotelsPagePage = () => {
                   className="font-medium ml-[1px] 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[8px] xl:mt-[9px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-center tracking-ls1 w-[60%]"
                   compid="1003:25192"
                   comptype="Button"
-                  variant="FillBlue800"
                 >
                   View Details
                 </Button>
@@ -330,7 +328,7 @@ const HotelsPagePage = () => {
                 <Text
                   className="DepartureDetai"
                   compid="1003:25199"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   Bed in Quad
@@ -358,7 +356,7 @@ const HotelsPagePage = () => {
                   <Text
                     className="font-medium lg:ml-[5px] xl:ml-[6px] 2xl:ml-[7px] 3xl:ml-[8px] mt-[1px] text-bluegray_900 tracking-ls1 w-[auto]"
                     compid="1003:25203"
-                    variant="body5"
+                    variant="body4"
                     comptype="Text"
                   >
                     4.2
@@ -366,7 +364,7 @@ const HotelsPagePage = () => {
                   <Text
                     className="font-normal lg:ml-[10px] xl:ml-[12px] 2xl:ml-[14px] 3xl:ml-[16px] not-italic text-blue_800 tracking-ls1 w-[auto]"
                     compid="1003:25201"
-                    variant="body5"
+                    variant="body4"
                     comptype="Text"
                   >
                     (1,941 reviews)
@@ -388,7 +386,7 @@ const HotelsPagePage = () => {
                   <Text
                     className="night"
                     compid="1003:25208"
-                    variant="body7"
+                    variant="body6"
                     comptype="Text"
                   >
                     /night
@@ -398,7 +396,6 @@ const HotelsPagePage = () => {
                   className="font-medium ml-[1px] 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[8px] xl:mt-[9px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-center tracking-ls1 w-[60%]"
                   compid="1003:25209"
                   comptype="Button"
-                  variant="FillBlue800"
                 >
                   View Details
                 </Button>
@@ -424,7 +421,7 @@ const HotelsPagePage = () => {
                 <Text
                   className="DepartureDetai"
                   compid="1003:25216"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   1 King, City view
@@ -452,7 +449,7 @@ const HotelsPagePage = () => {
                   <Text
                     className="font-medium lg:ml-[5px] xl:ml-[6px] 2xl:ml-[7px] 3xl:ml-[8px] mt-[1px] text-bluegray_900 tracking-ls1 w-[auto]"
                     compid="1003:25220"
-                    variant="body5"
+                    variant="body4"
                     comptype="Text"
                   >
                     4.1
@@ -460,7 +457,7 @@ const HotelsPagePage = () => {
                   <Text
                     className="font-normal lg:ml-[13px] xl:ml-[15px] 2xl:ml-[17px] 3xl:ml-[20px] not-italic text-blue_800 tracking-ls1 w-[auto]"
                     compid="1003:25218"
-                    variant="body5"
+                    variant="body4"
                     comptype="Text"
                   >
                     (1,002 reviews)
@@ -482,7 +479,7 @@ const HotelsPagePage = () => {
                   <Text
                     className="night"
                     compid="1003:25225"
-                    variant="body7"
+                    variant="body6"
                     comptype="Text"
                   >
                     /night
@@ -492,7 +489,6 @@ const HotelsPagePage = () => {
                   className="font-medium ml-[1px] 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[8px] xl:mt-[9px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-center tracking-ls1 w-[61%]"
                   compid="1003:25226"
                   comptype="Button"
-                  variant="FillBlue800"
                 >
                   View Details
                 </Button>
@@ -528,7 +524,7 @@ const HotelsPagePage = () => {
                     <Text
                       className="DepartureDetai"
                       compid="1003:25232"
-                      variant="body5"
+                      variant="body4"
                       comptype="Text"
                     >
                       Deluxe King
@@ -556,7 +552,7 @@ const HotelsPagePage = () => {
                       <Text
                         className="font-medium lg:ml-[4px] xl:ml-[5px] 2xl:ml-[6px] 3xl:ml-[7px] mt-[1px] text-bluegray_900 tracking-ls1 w-[auto]"
                         compid="1003:25237"
-                        variant="body5"
+                        variant="body4"
                         comptype="Text"
                       >
                         4.7
@@ -564,7 +560,7 @@ const HotelsPagePage = () => {
                       <Text
                         className="test_60reviews"
                         compid="1003:25235"
-                        variant="body5"
+                        variant="body4"
                         comptype="Text"
                       >
                         (1,136 reviews)
@@ -595,7 +591,7 @@ const HotelsPagePage = () => {
                   <Text
                     className="night"
                     compid="1003:25243"
-                    variant="body7"
+                    variant="body6"
                     comptype="Text"
                   >
                     /night
@@ -605,7 +601,6 @@ const HotelsPagePage = () => {
                   className="font-medium ml-[1px] 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[8px] xl:mt-[9px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-center tracking-ls1 w-[60%]"
                   compid="1003:25244"
                   comptype="Button"
-                  variant="FillBlue800"
                 >
                   View Details
                 </Button>
@@ -653,15 +648,15 @@ const HotelsPagePage = () => {
               comptype="Column"
             >
               <Text
-                className="FormTitleSubt"
+                className="font-bold 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[8px] xl:mt-[9px] text-blue_801 tracking-ls1 uppercase w-[auto]"
                 compid="1003:25274"
-                variant="body4"
+                variant="body3"
                 comptype="Text"
               >
                 subscribe to our newsletter
               </Text>
               <Text
-                className="FormTitle"
+                className="lg:mt-[10px] xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] text-gray_801 w-[auto]"
                 compid="1003:25275"
                 as="h5"
                 variant="h5"
@@ -677,7 +672,7 @@ const HotelsPagePage = () => {
                 <Text
                   className="Form"
                   compid="1003:25278"
-                  variant="body4"
+                  variant="body3"
                   comptype="Text"
                 >
                   Fill in your details to join the party!
@@ -704,7 +699,8 @@ const HotelsPagePage = () => {
                   className="font-medium ml-[2px] lg:mt-[13px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] lg:text-[11px] xl:text-[13px] 2xl:text-[15px] 3xl:text-[18px] text-center tracking-ls1 uppercase w-[36%]"
                   compid="1003:25296"
                   comptype="Button"
-                  size="lg"
+                  size="md"
+                  variant="FillOrange500"
                 >
                   submit
                 </Button>
@@ -722,7 +718,7 @@ const HotelsPagePage = () => {
               >
                 <Img
                   src="images/img_combinedshape_white_A700.svg"
-                  className="CombinedShape_One"
+                  className="lg:h-[25px] xl:h-[29px] 2xl:h-[33px] 3xl:h-[39px] w-[27%]"
                   compid="1003:25304"
                   comptype="Image"
                   alt="CombinedShape One"
@@ -730,7 +726,7 @@ const HotelsPagePage = () => {
                 <Text
                   className="FickleFlightBi"
                   compid="1003:25305"
-                  variant="body4"
+                  variant="body3"
                   comptype="Text"
                 >
                   Fickle Flight is your one-stop travel portal. We offer hassle
@@ -739,7 +735,7 @@ const HotelsPagePage = () => {
                 </Text>
                 <Img
                   src="images/img_socialicons.svg"
-                  className="SocialIcons"
+                  className="lg:h-[22px] xl:h-[25px] 2xl:h-[29px] 3xl:h-[34px] ml-[1px] lg:mt-[13px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] w-[20%]"
                   compid="1003:25306"
                   comptype="Image"
                   alt="SocialIcons"
@@ -758,15 +754,15 @@ const HotelsPagePage = () => {
                 <Text
                   className="font-medium text-white_A700 w-[auto]"
                   compid="1003:25317"
-                  variant="body3"
+                  variant="body2"
                   comptype="Text"
                 >
                   Company
                 </Text>
                 <Text
-                  className="AboutUs"
+                  className="font-normal lg:mt-[15px] xl:mt-[17px] 2xl:mt-[20px] 3xl:mt-[24px] not-italic text-white_A700 w-[auto]"
                   compid="1003:25316"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   About Us
@@ -774,23 +770,23 @@ const HotelsPagePage = () => {
                 <Text
                   className="News"
                   compid="1003:25318"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   News
                 </Text>
                 <Text
-                  className="Careers"
+                  className="font-normal lg:mt-[10px] xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] not-italic text-white_A700 w-[auto]"
                   compid="1003:25319"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   Careers
                 </Text>
                 <Text
-                  className="Howwework"
+                  className="font-normal lg:mt-[10px] xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] not-italic text-white_A700 w-[auto]"
                   compid="1003:25320"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   How we work
@@ -804,15 +800,15 @@ const HotelsPagePage = () => {
                 <Text
                   className="font-medium text-white_A700 w-[auto]"
                   compid="1003:25323"
-                  variant="body3"
+                  variant="body2"
                   comptype="Text"
                 >
                   Support
                 </Text>
                 <Text
-                  className="Account"
+                  className="font-normal lg:mt-[17px] xl:mt-[19px] 2xl:mt-[22px] 3xl:mt-[26px] not-italic text-white_A700 w-[auto]"
                   compid="1003:25322"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   Account
@@ -820,7 +816,7 @@ const HotelsPagePage = () => {
                 <Text
                   className="News"
                   compid="1003:25324"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   Support Center
@@ -828,7 +824,7 @@ const HotelsPagePage = () => {
                 <Text
                   className="font-normal lg:mt-[11px] xl:mt-[13px] 2xl:mt-[15px] 3xl:mt-[18px] not-italic text-white_A700 w-[auto]"
                   compid="1003:25325"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   FAQ
@@ -836,7 +832,7 @@ const HotelsPagePage = () => {
                 <Text
                   className="Accessibility"
                   compid="1003:25326"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   Accessibility
@@ -850,15 +846,15 @@ const HotelsPagePage = () => {
                 <Text
                   className="font-medium text-white_A700 w-[auto]"
                   compid="1003:25329"
-                  variant="body3"
+                  variant="body2"
                   comptype="Text"
                 >
                   More
                 </Text>
                 <Text
-                  className="CovidAdvisory"
+                  className="font-normal lg:mt-[18px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] not-italic text-white_A700 w-[auto]"
                   compid="1003:25328"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   Covid Advisory
@@ -866,15 +862,15 @@ const HotelsPagePage = () => {
                 <Text
                   className="Accessibility"
                   compid="1003:25330"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   Airline Fees
                 </Text>
                 <Text
-                  className="Tips"
+                  className="font-normal lg:mt-[14px] xl:mt-[16px] 2xl:mt-[18px] 3xl:mt-[21px] not-italic text-white_A700 w-[auto]"
                   compid="1003:25331"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   Tips
@@ -882,7 +878,7 @@ const HotelsPagePage = () => {
                 <Text
                   className="Accessibility"
                   compid="1003:25332"
-                  variant="body5"
+                  variant="body4"
                   comptype="Text"
                 >
                   Quarantine Rules
