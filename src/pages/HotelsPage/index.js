@@ -8,6 +8,7 @@ import {
   Stack,
   Button,
   List,
+  CheckBox,
   Input,
   Line,
 } from "components";
@@ -384,13 +385,14 @@ const HotelsPagePage = () => {
                   compid="1003:25200"
                   comptype="Row"
                 >
-                  <Img
-                    src="images/img_star.svg"
-                    className="lg:h-[13px] xl:h-[15px] 2xl:h-[17px] 3xl:h-[20px] w-[10%]"
+                  <CheckBox
+                    className=""
+                    inputClassName="mr-[5px] w-[undefinedpx]"
                     compid="1003:25204"
-                    comptype="Image"
-                    alt="star One"
-                  />
+                    comptype="CheckBox"
+                    name="star One"
+                    label=""
+                  ></CheckBox>
                   <Text
                     className="font-medium lg:ml-[5px] xl:ml-[6px] 2xl:ml-[7px] 3xl:ml-[8px] mt-[1px] text-bluegray_900 tracking-ls1 w-[auto]"
                     compid="1003:25203"
@@ -477,13 +479,14 @@ const HotelsPagePage = () => {
                   compid="1003:25217"
                   comptype="Row"
                 >
-                  <Img
-                    src="images/img_star.svg"
-                    className="lg:h-[13px] xl:h-[15px] 2xl:h-[17px] 3xl:h-[20px] w-[10%]"
+                  <CheckBox
+                    className=""
+                    inputClassName="mr-[5px] w-[undefinedpx]"
                     compid="1003:25221"
-                    comptype="Image"
-                    alt="star Two"
-                  />
+                    comptype="CheckBox"
+                    name="star Two"
+                    label=""
+                  ></CheckBox>
                   <Text
                     className="font-medium lg:ml-[5px] xl:ml-[6px] 2xl:ml-[7px] 3xl:ml-[8px] mt-[1px] text-bluegray_900 tracking-ls1 w-[auto]"
                     compid="1003:25220"

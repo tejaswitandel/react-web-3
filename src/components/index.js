@@ -12,6 +12,7 @@ import { RadioGroup } from "./RadioGroup";
 import { Radio } from "./Radio";
 import { Button } from "./Button";
 import { Input } from "./Input";
+import { CheckBox } from "./CheckBox";
 export {
   Column,
   Datepicker,
@@ -27,4 +28,5 @@ export {
   Radio,
   Button,
   Input,
+  CheckBox,
 };
