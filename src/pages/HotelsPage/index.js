@@ -17,14 +17,18 @@ const HotelsPagePage = () => {
   const navigate = useNavigate();
 
   function handleNavigate() {
+    window.location.href =
+      "https://www.thehansindia.com/news/national/holiday-calendar-2021-find-the-complete-list-of-holidays-in-2021-664304";
+  }
+  function handleNavigate1() {
     navigate("/homepage");
   }
-  function handleNavigate4() {
+  function handleNavigate5() {
     //TODO: You had integrated navigation action, since you've not selected the target page,
     // you will have to update navigation code manually.
     navigate("");
   }
-  function handleNavigate5() {
+  function handleNavigate6() {
     navigate("/homepage");
   }
 
@@ -53,7 +57,7 @@ const HotelsPagePage = () => {
               compid="1016:12065"
               variant="body6"
               comptype="Text"
-              onClick={handleNavigate5}
+              onClick={handleNavigate6}
             >
               Explore
             </Text>
@@ -62,7 +66,7 @@ const HotelsPagePage = () => {
               compid="1016:12066"
               variant="body6"
               comptype="Text"
-              onClick={handleNavigate4}
+              onClick={handleNavigate5}
             >
               Search
             </Text>
@@ -267,7 +271,7 @@ const HotelsPagePage = () => {
                         compid="1003:25183"
                         variant="body4"
                         comptype="Text"
-                        onClick={handleNavigate}
+                        onClick={handleNavigate1}
                       >
                         (1,136 reviews)
                       </Text>
@@ -275,9 +279,10 @@ const HotelsPagePage = () => {
                   </Column>
                   <Img
                     src="images/img_play.svg"
-                    className="lg:h-[18px] xl:h-[20px] 2xl:h-[23px] 3xl:h-[27px] mt-[1px] lg:w-[17px] xl:w-[19px] 2xl:w-[22px] 3xl:w-[26px]"
+                    className="common-pointer lg:h-[18px] xl:h-[20px] 2xl:h-[23px] 3xl:h-[27px] mt-[1px] lg:w-[17px] xl:w-[19px] 2xl:w-[22px] 3xl:w-[26px]"
                     compid="I1003:25187;169:428"
                     comptype="Image"
+                    onClick={handleNavigate}
                     alt="play"
                   />
                 </Row>

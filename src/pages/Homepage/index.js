@@ -40,18 +40,18 @@ const HomepagePage = () => {
         toast.error("Jisko dance nhi karna woh jaake apni bhens charaye. ");
       });
   }
-  function handleNavigate1() {
-    navigate("/hotelspage");
-  }
   function handleNavigate2() {
     navigate("/hotelspage");
   }
   function handleNavigate3() {
+    navigate("/hotelspage");
+  }
+  function handleNavigate4() {
     //TODO: You had integrated navigation action, since you've not selected the target page,
     // you will have to update navigation code manually.
     navigate("");
   }
-  function handleNavigate6() {
+  function handleNavigate7() {
     navigate("/hotelspage");
   }
 
@@ -73,7 +73,7 @@ const HomepagePage = () => {
               className="common-pointer lg:h-[25px] xl:h-[29px] 2xl:h-[33px] 3xl:h-[39px] lg:ml-[45px] xl:ml-[52px] 2xl:ml-[59px] 3xl:ml-[70px] w-[12%]"
               compid="1003:3849"
               comptype="Image"
-              onClick={handleNavigate1}
+              onClick={handleNavigate2}
               alt="CombinedShape"
             />
             <Text
@@ -89,7 +89,7 @@ const HomepagePage = () => {
               compid="1003:3853"
               variant="body6"
               comptype="Text"
-              onClick={handleNavigate3}
+              onClick={handleNavigate4}
             >
               Search
             </Text>
@@ -615,7 +615,7 @@ const HomepagePage = () => {
                   className="common-pointer bg-blue_400 lg:h-[51px] xl:h-[58px] 2xl:h-[66px] 3xl:h-[79px] lg:px-[14px] xl:px-[16px] 2xl:px-[19px] 3xl:px-[22px] rounded-radius16 w-[56%]"
                   compid="1003:3957"
                   comptype="Stack"
-                  onClick={handleNavigate2}
+                  onClick={handleNavigate3}
                 >
                   <Img
                     src="images/img_car_26X28.svg"
@@ -1143,7 +1143,7 @@ const HomepagePage = () => {
             className="common-pointer bg-white_A700 items-center justify-end mt-[1px] p-[2px] rounded-radius12 w-[14%]"
             compid="1003:4068"
             comptype="Row"
-            onClick={handleNavigate6}
+            onClick={handleNavigate7}
           >
             <Text
               className="rowviewallholida"
