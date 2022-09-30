@@ -11,11 +11,40 @@ import {
   Input,
   Line,
 } from "components";
+import * as yup from "yup";
 import { useNavigate } from "react-router-dom";
+import { putUpdateprofile } from "service/api";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import useForm from "hooks/useForm";
 
 const HotelsPagePage = () => {
+  const [apiData, setapiData] = React.useState();
+  const formValidationSchema = yup.object().shape({ name: yup.string() });
+  const form = useForm(
+    { name: "" },
+    {
+      validate: true,
+      validateSchema: formValidationSchema,
+      validationOnChange: true,
+    }
+  );
   const navigate = useNavigate();
 
+  function callApi(data) {
+    const req = { data: { ...data } };
+
+    putUpdateprofile(req)
+      .then((res) => {
+        setapiData(res);
+
+        navigate("/homepage");
+      })
+      .catch((err) => {
+        console.error(err);
+        toast.error("Done...");
+      });
+  }
   function handleNavigate() {
     window.location.href =
       "https://www.thehansindia.com/news/national/holiday-calendar-2021-find-the-complete-list-of-holidays-in-2021-664304";
@@ -692,6 +721,11 @@ const HotelsPagePage = () => {
                   compid="1003:25281"
                   type="text"
                   comptype="EditText"
+                  onChange={(e) => {
+                    form.handleChange("name", e.target.value);
+                  }}
+                  errors={form?.errors?.name}
+                  value={form?.values?.name}
                   name="Input"
                   placeholder="Your name"
                 ></Input>
@@ -705,9 +739,12 @@ const HotelsPagePage = () => {
                   placeholder="Email address"
                 ></Input>
                 <Button
-                  className="font-medium ml-[2px] lg:mt-[13px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] lg:text-[11px] xl:text-[13px] 2xl:text-[15px] 3xl:text-[18px] text-center tracking-ls1 uppercase w-[36%]"
+                  className="common-pointer font-medium ml-[2px] lg:mt-[13px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] lg:text-[11px] xl:text-[13px] 2xl:text-[15px] 3xl:text-[18px] text-center tracking-ls1 uppercase w-[36%]"
                   compid="1003:25296"
                   comptype="Button"
+                  onClick={() => {
+                    form.handleSubmit(callApi);
+                  }}
                   size="md"
                   variant="FillOrange500"
                 >
@@ -897,6 +934,8 @@ const HotelsPagePage = () => {
           </Column>
         </footer>
       </Column>
+
+      <ToastContainer />
     </>
   );
 };

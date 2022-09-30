@@ -20,16 +20,16 @@ import "react-toastify/dist/ReactToastify.css";
 import useForm from "hooks/useForm";
 
 const HomepagePage = () => {
-  const [apiData, setapiData] = React.useState();
+  const [apiData1, setapiData1] = React.useState();
   const form = useForm({ username: "", password: "" });
   const navigate = useNavigate();
 
-  function callApi(data) {
+  function callApi1(data) {
     const req = { data: { ...data } };
 
     postLogin(req)
       .then((res) => {
-        setapiData(res);
+        setapiData1(res);
 
         //TODO: You had integrated navigation action, since you've not selected the target page,
         // you will have to update navigation code manually.
@@ -334,7 +334,7 @@ const HomepagePage = () => {
                     compid="1323:1383"
                     comptype="Button"
                     onClick={() => {
-                      form.handleSubmit(callApi);
+                      form.handleSubmit(callApi1);
                     }}
                     size="md"
                     variant="FillOrange500"
