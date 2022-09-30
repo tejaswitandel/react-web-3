@@ -14,10 +14,30 @@ import {
   Input,
 } from "components";
 import { useNavigate } from "react-router-dom";
+import { postLogin } from "service/api";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import useForm from "hooks/useForm";
 
 const HomepagePage = () => {
+  const [apiData, setapiData] = React.useState();
+  const form = useForm({ username: "", password: "" });
   const navigate = useNavigate();
 
+  function callApi(data) {
+    const req = { data: { ...data } };
+
+    postLogin(req)
+      .then((res) => {
+        setapiData(res);
+
+        navigate("/resultspage", { state: { id: res?.data?.id } });
+      })
+      .catch((err) => {
+        console.error(err);
+        toast.error("Jisko dance nhi karna woh jaake apni bhens charaye. ");
+      });
+  }
   function handleNavigate() {
     navigate("/hotelspage");
   }
@@ -29,9 +49,6 @@ const HomepagePage = () => {
   }
   function handleNavigate7() {
     navigate("/hotelspage");
-  }
-  function handleBackNavigation() {
-    navigate(-1);
   }
 
   return (
@@ -180,6 +197,9 @@ const HomepagePage = () => {
                       inputClassName="h-[16.67px] mr-[5px] w-[16.67px]"
                       compid="1229:827"
                       comptype="Radio"
+                      onChange={(e) => {
+                        form.handleChange("username", e.target.value);
+                      }}
                       checked={true}
                       name="radiogrouplabel"
                       label="Return"
@@ -190,6 +210,9 @@ const HomepagePage = () => {
                       inputClassName="h-[16.67px] mr-[5px] w-[16.67px]"
                       compid="1229:831"
                       comptype="Radio"
+                      onChange={(e) => {
+                        form.handleChange("password", e.target.value);
+                      }}
                       checked={true}
                       name="radiogrouplabel"
                       label="Oneway"
@@ -306,7 +329,9 @@ const HomepagePage = () => {
                     className="common-pointer font-medium 2xl:ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] lg:text-[11px] xl:text-[13px] 2xl:text-[15px] 3xl:text-[18px] text-center tracking-ls1 uppercase w-[15%]"
                     compid="1323:1383"
                     comptype="Button"
-                    onClick={handleBackNavigation}
+                    onClick={() => {
+                      form.handleSubmit(callApi);
+                    }}
                     size="lg"
                   >
                     Search flights
@@ -1763,6 +1788,8 @@ const HomepagePage = () => {
           </Column>
         </footer>
       </Column>
+
+      <ToastContainer />
     </>
   );
 };
